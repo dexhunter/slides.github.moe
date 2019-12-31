@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Hyperledger</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="05f49f00a7c27737c13d52d4b43830a9"><div class="sl-block" data-block-type="text" style="width: 807px; left: 53px; top: 64px; height: auto;" data-block-id="f27dac339ad8db9e4a07a11d4e5b25df"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Introduction to Hyperledger Fabric</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 451px;" data-block-id="a43535815e0f1170cd65f66ebe04cdc8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Dixing Xu</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 521px;" data-block-id="910fdafbcd9360bd0eb2add30e2d1561"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>ZJU Blockchain Association</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 591px;" data-block-id="bc83a8f1220d775632ccb7eb937edca7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>Dec. 14th 2019</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 318px; height: 159px; left: 306px; top: 271px;" data-block-id="50455ce75b03723c13363eda773ae56d"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="318" data-natural-height="159" style="" data-lazy-loaded="" data-src="hyperledger/2ad412724af3154978974b95cc37bd0c.png"></div></div></section><section class="stack" data-id="28296ca11408f16193fa7c0235109cda"><section data-id="5d7fe4bb9b30b0b2528acd5a36d04d3b"><div class="sl-block" data-block-type="text" style="width: 807px; left: 40px; top: 116px; height: auto;" data-block-id="9423117c4c8d1345bc72155e6b16d553"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>What is Hyperledger?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 263px; height: auto;" data-block-id="cc27b5799233b664e13af3462eb8dc1c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li class="fragment" data-fragment-index="0">An <strong>Open Souce</strong> collaborative effort to advacne cross-industry <strong>blockchain technologies</strong><br>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+<span style="text-align:left">Host by </span><strong>The Linux Foudantion</strong><span style="text-align:left">, fastest-growing project in LF history</span>
+</li>
+	<li class="fragment" data-fragment-index="2">
+<strong>Global collaboration</strong><span style="text-align:left"> spanning finance, banking, IoT, sypply chains, healthcare, manufacturing, technology and more.</span>
+</li>
+</ul>
+</div></div></section><section data-id="4d899ecedc82b32b8b6ba9948e97950b"><div class="sl-block" data-block-type="text" style="width: 807px; left: 40px; top: 116px; height: auto;" data-block-id="ddadf6adbc9bfdcb1558cfe22442c262"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>What is Hyperledger?</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 960px; height: 388px; left: 0px; top: 234px;" data-block-id="c2b40577e7645598740609b3154243b7"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="4832" data-natural-height="1953" data-lazy-loaded="" data-src="hyperledger/b17a38fed9e0c545646e571e7a645fc1.svg"></div></div></section></section><section data-id="22bfcb71b9e3d9ffadbcb53c407c2fc3"><div class="sl-block" data-block-type="text" style="width: 807px; left: 40px; top: 116px; height: auto;" data-block-id="6bb8a7e5de34a2aa76548b73cba4d355"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>What is Fabric?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 263px; height: auto;" data-block-id="66310d6c3ebaccad18e585f8009c7a8a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">permissioned blockchain infrastructure</li>
+	<li class="fragment" data-fragment-index="0">contributed by IBM employees mostly</li>
+	<li class="fragment" data-fragment-index="0">modular architecture</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 880px; left: 41px; top: 560px;" data-block-id="66e19c695720dc395eda25a86e2914c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:0.5em">[1]: <span style="color:rgb(34, 34, 34); text-align:left">Androulaki, E., Barger, A., Bortnikov, V., Cachin, C., Christidis, K., De Caro, A., Enyeart, D., Ferris, C., Laventman, G., Manevich, Y. and Muralidharan, S., 2018, April. Hyperledger fabric: a distributed operating system for permissioned blockchains. In </span><em>Proceedings of the Thirteenth EuroSys Conference</em><span style="color:rgb(34, 34, 34); text-align:left"> (p. 30). ACM.</span></span></p>
+</div></div></section><section data-id="632ea2b30e6fc990fe4235706e1b4592"><div class="sl-block" data-block-type="text" style="width: 807px; left: 73px; top: 119px; height: auto;" data-block-id="c7780dc45c677fba476a4d10f47fd9aa"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Key Concepts</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 263px; height: auto;" data-block-id="f40137dc01b0d4c6df366b3cb8c1234f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Identity</li>
+	<li>Membership</li>
+	<li>Peers</li>
+	<li>Smart Contracts and Chain Code</li>
+	<li>Ledger</li>
+	<li>Private data</li>
+	<li>Channel capabilities</li>
+</ul>
+</div></div></section><section class="stack" data-id="7df9d259b75d484ef847cf9111565c48"><section data-id="d27dfe5ceb357933e13a8fd091122fe1"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 33px; height: auto;" data-block-id="6059dc017ffc25770e51f23a29fd025e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Identity[2]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 192px; top: 630px;" data-block-id="5cd9be1d15eb8abfea58b6d8bf16576d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:0.5em">[2]: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/identity/identity.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/identity/identity.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 777px; height: 283px; left: 104px; top: 139px;" data-block-id="24ef77ccbd4f53dc32250809c8fb2f99"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="777" data-natural-height="283" data-lazy-loaded="" data-src="hyperledger/cf8add1df90bbcae2bb1f0bcf68dbb09.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 436px;" data-block-id="edcabab5958c02f9b13c1c3eedb82f53"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>Shopping at supermarket</p>
+
+<ul>
+	<li><span style="font-size:0.7em">only Visa, Mastercard and AMEX cards are accepted</span></li>
+	<li><span style="font-size:21px">(1)a valid card that (2)is accepted by store</span></li>
+</ul>
+</div></div></section><section data-id="cfa2c00a529263a5380733e7a772a6c0"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 33px; height: auto;" data-block-id="a267afa418872ba3e58768acb6718ee9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Identity[2]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 192px; top: 652px;" data-block-id="36e1233dd3b423e2ee85b2391abeae36"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><span style="font-size:0.5em">[2]: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/identity/identity.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/identity/identity.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 777px; height: 283px; left: 103px; top: 137px; min-width: 4px; min-height: 4px;" data-block-id="27d5a1e267b47193e07e87c9b9d452c1"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="777" data-natural-height="283" data-lazy-loaded="" data-src="hyperledger/cf8add1df90bbcae2bb1f0bcf68dbb09.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 440px;" data-block-id="89ecb3b33a627bd9e4e361f1967943b1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
+<p>Shopping at supermarket</p>
+
+<ul>
+	<li style="font-size:21px">
+<strong>Public Key Infrastructure</strong> (PKI) provides a list of identities</li>
+	<li style="font-size:21px">
+<strong>Membership Service Provider</strong> (MSP) says which of these are members of a given organization that participates in the network</li>
+</ul>
+</div></div></section><section data-id="75dfe2443a8c002225c26d9c7746f169"><div class="sl-block" data-block-type="text" style="width: 807px; left: 78px; top: 33px; height: auto;" data-block-id="8be53fbaa3f93307f0daa18a0dc7e5de"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Identity[2]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 192px; top: 652px;" data-block-id="7800cab045a0d8b5cd6be3b25ff2ca16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:0.5em">[2]: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/identity/identity.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/identity/identity.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 182px; top: 464px;" data-block-id="7fcac2838b28f1b855f171cdce777e53"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" dir="ui">
+<p style="font-size:21px"><strong>PKI: </strong>a collection of internet techno​logies that provides secure communications in a network (S in HTTPS)</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 338px; left: 95px; top: 121px;" data-block-id="b28399cc62a4f205bedb482a7302134b"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="884" data-natural-height="371" data-lazy-loaded="" data-src="hyperledger/38ae9dccea909b532ee1afc1852e3b21.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 62px; top: 524px;" data-block-id="88336c1650b0670d7d5488f18a5bf807"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 70%;">
+<ol>
+	<li>
+	<p><span style="font-size:1.0em">Digital Certificates</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.0em">Public and Private Keys, <span style="font-size:0.7em">Digital Signature</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.0em">Certificate Authorities (CA)</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.0em">Certificate Revocation Lists</span></p>
+	</li>
+</ol>
+</div></div></section></section><section data-id="f6088a9d4aa2d9c84d2dcdabf06e8822"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 33px; height: auto;" data-block-id="e767583a5d22251460b0b3fe9d2fb0b7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Membership[3]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 861px; left: 50px; top: 649px;" data-block-id="d94836e4423d5cbb9be545d2dd2828bb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:0.5em">[3]: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/membership/membership.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/membership/membership.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 181px; top: 451px;" data-block-id="373871ae14ad93a416c8a915874e6403"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><strong>MSP:</strong> identifies which Root CAs and Intermediate CAs are truested to define the members of a trust domain e.g. an organization</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 330px; left: 78px; top: 106px;" data-block-id="d36f46859b579ce281061691ec59199a"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="838" data-natural-height="343" data-src="hyperledger/22c86a727b272683c0a3fac4d64d6f34.png"></div></div></section><section class="stack" data-id="fb474d5a728a9e5daab9db3cf50df6cd"><section data-id="8e7a012fc5d9fb7240b9195f9d3514cf"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 33px; height: auto;" data-block-id="bd9b78f57a4325c4e7e88ce85125d249"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Peers[4]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 861px; left: 50px; top: 649px;" data-block-id="5b5e5f0f18027d919b82a783ca04843a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:0.5em">[4]: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 181px; top: 490px;" data-block-id="d613ab2cf384e134cb9070543f2b26a5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Each peer node holds copies of ledgers and smar contracts.</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 359px; left: 78px; top: 113px;" data-block-id="4c5ba53c0128cd345f57414f84bf9aed"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1440" data-natural-height="642" data-src="hyperledger/2a8175bce46326e29f009b87d2840fbc.png"></div></div></section><section data-id="7294ba25859454483aa5c2355c80c4cb"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 33px; height: auto;" data-block-id="1b991f674f7187c8838b86df52a1e65c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Peers[4]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 861px; left: 50px; top: 649px;" data-block-id="1a6d1f375fc07222aad8eff34dbc4bf5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:0.5em">[4]: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 839px; height: 368px; left: 61px; top: 166px;" data-block-id="1f7562736bab404d8ed50ef758a471bd"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="844" data-natural-height="370" data-src="hyperledger/347fa533d3bed79302df1780c21a34b2.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 142px; top: 514px;" data-block-id="95dc9e0ee1f7fbc6810f460225c4312b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ol>
+	<li><span style="font-size:0.7em">A -&gt; P1 -&gt; S1 -&gt; L1</span></li>
+	<li><span style="font-size:0.7em">P1 -&gt; S1</span></li>
+	<li><span style="font-size:0.7em">O1 -&gt; all peers (P1,...)</span></li>
+</ol>
+</div></div></section><section data-id="8dca966a4c2cb0d8af03b52e4f0f9dfd"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 33px; height: auto;" data-block-id="9865cd34f0123d9d777d625e7dbe1cf0"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Peers[4]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 861px; left: 50px; top: 649px;" data-block-id="b2ba6ee61d6892f8b800632f6263eaad"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:0.5em">[4]: <a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/peers/peers.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 798px; left: 82px; top: 476px;" data-block-id="75bc0507559003eca0686bfeb04c1124"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Transaction Workflow</p>
+
+<ol>
+	<li>Proposal</li>
+	<li>Ordering and packaging transactions into blocks</li>
+	<li>Validation and commit</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 806px; height: 299px; left: 77px; top: 154px;" data-block-id="e20d48fae567b0c536dda3ab3720fb56"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="2254" data-natural-height="836" data-src="hyperledger/f88169f8cb44b8bb61b158dfeae04e8a.png"></div></div></section></section><section data-id="c78196a9430ddb7ef503787ca555efca"><div class="sl-block" data-block-type="text" style="width: 807px; left: 73px; top: 84px; height: auto;" data-block-id="461db1fe562ff03c778186d587010cdb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Smart Contracts &amp; Chaincodes[5]</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 861px; left: 50px; top: 649px;" data-block-id="e01d2cef603d19adce7e8f45b1e78495"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="font-size:15px">[5]: </span><span style="font-size:0.5em"><a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/smartcontract/smartcontract.html" target="_blank">https://hyperledger-fabric.readthedocs.io/en/release-1.4/smartcontract/smartcontract.html</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 177px; top: 381px;" data-block-id="4e5af7b5be8f7c10f3d9c51e7b44de7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Maybe in another talk?</p>
+</div></div></section><section data-id="811d60ceec4b3da8cd7b12bc6bd4f9c3"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 266px; height: auto;" data-block-id="cec0ad7255154f649de206cb4852ea56"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Thank you!</h1>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1673029,"slug":"hyperledger","title":"Hyperledger","description":"","width":960,"height":700,"visibility":"all","published_at":"2019-12-13T12:55:44.774Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cfa11737c8f926643492fd231536cea4/thumb.jpg?1576241854","view_count":1,"user":{"id":961118,"username":"dexhunter","name":"Dex Hunter","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/-pq0f2ZzF6Xg/AAAAAAAAAAI/AAAAAAAADXA/7EIWd8Xxp2A/photo.jpg","paid":true,"pro":false,"lite":true,"team_id":null,"settings":{"id":2218315,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":17,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1576318656717,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				maxScale: 1,
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js' },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/reveal-plugins/zoom/zoom.js', async: true }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
